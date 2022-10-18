@@ -48,3 +48,14 @@ Ontop of the fan, there is a pcb including a button, a switch as well as a small
 #### Real-Time-Clock
 
 The RTC-Module is hooked up via i2c and is used to recover the current time after the Rasperry Pi has restarted. The Raspberry Pi does not contain any internal method of keeping time, while not being supplied with power.
+
+### Side-Sensor-Unit
+
+## ToDo
+
+<span style="color:blue">some *blue* text</span>.
+
+### Samrtphone
+
+## ToDo
+
