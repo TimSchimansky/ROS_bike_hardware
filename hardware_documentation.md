@@ -51,7 +51,9 @@ The RTC-Module is hooked up via i2c and is used to recover the current time afte
 
 ### Side-Sensor-Unit
 
+```diff
 ! ToDo
+```
 
 ### Samrtphone
 
