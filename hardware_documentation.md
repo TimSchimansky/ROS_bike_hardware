@@ -29,11 +29,12 @@ The Logging-Unit is self sufficient as it can work without any othe components. 
 
 #### Power supply and distribution
 
-The Unit is currently powered by an 12V (3S LiPo) Battery, that can deliver at least 2.5A. This Battery does power everything apart from the Smartphone. The Battery needs a LiPo-Checker, to protect the cells for overdischarge.
+The Unit can currently be powered in two ways (The input is switched via the jumper next to the screw terminals; in image: yellow=USB-C PD/blue=screw terminals):
 
-```diff
-+ The Logging-Unit is going to be reworked to accept 12V over USB-C PD
-```
+- an 12V (3S LiPo) Battery, that can deliver at least 2.5A. This Battery does power everything apart from the Smartphone. The Battery needs a LiPo-Checker, to protect the cells for overdischarge.
+- USB-C PD at 12V. The powersupply or batterybank needs to explicitly support this. In tests, 18W of PD cuts off the Raspberry Pi for a short period, when stuff is plugged in after boot. If using a low power PD-supply, it is advisable to plug in everything before powering the system
+
+![image shows jumper setup for input](./images/power_supply.jpg)
 
 The power runs through a fuse and is then passed through a buck converter to convert it down from 12V to 5V. The Fan as well as other peripheral devices may use the 12V supply directly. The Raspberry Pi gets its power through the GPIO-Pinheader
 
